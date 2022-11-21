@@ -26,3 +26,77 @@ body { background-image: linear-gradient(90deg, #923cb5 20%, #109bdb 80%);
     color: red;
     
   }
+
+  @media screen and (min-width: 400px){
+    .site-footer {
+        background-color: rgb(71, 56, 56);
+        padding: 90px 15px 30px;
+      }
+    }
+    
+    
+      @media screen and (min-width: 400px){
+        .site-footer .site-footer--content {
+          max-width: 900px;
+          font-size:20px;
+          color: #FFF;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+     
+      @media screen and (min-width: 400px){
+      .site-footer .site-footer--content a {
+        color: #FFF;
+        text-decoration: none;
+      }  
+    }
+
+
+
+
+    @media screen and (min-width: 400px){
+      .header {
+        display: flex;
+        padding-left: 2%;
+        padding-right:2%;
+        align-items: center;
+        position:sticky;
+        top: 0;
+        background-color: #FFF;
+      }
+    }
+    @media screen and (min-width: 400px){
+      .header .links {
+          width: 100%;
+      }
+      }
+      @media screen and (min-width: 400px){
+      .header .links ul {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+    @media screen and (min-width: 400px){
+      .header .links ul li {
+        list-style: none;
+      }
+    }
+      
+      @media screen and (min-width: 400px){
+      .header .links ul li a {
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #600bb4;
+        letter-spacing: 1.2px;
+        padding: 10px 15px;
+        text-decoration: none;
+        display: block;
+      }
+    }
+    @media screen and (min-width: 400px){
+      .header .links ul li:hover {
+        background-color: #2aedd9;
+        transition: 0.5s;
+      }
+    }

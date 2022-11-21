@@ -32,7 +32,7 @@ document.getElementById("read").onclick = function () {
 
   firebase
     .database()
-    .ref("student/" + PhoneV)
+    .ref("AT/" + PhoneV)
     .on("value", function (snap) {
       document.getElementById("Phone").value = snap.val().Phone;
       document.getElementById("Name").value = snap.val().Name;
@@ -46,7 +46,7 @@ document.getElementById("update").onclick = function () {
 
   firebase
     .database()
-    .ref("student/" + PhoneV)
+    .ref("AT/" + PhoneV)
     .update({
       //   Phone: PhoneV,
       Name: NameV,
@@ -64,7 +64,7 @@ document.getElementById("delete").onclick = function () {
 
   firebase
     .database()
-    .ref("student/" + PhoneV)
+    .ref("AT/" + PhoneV)
     .remove();
   alert("Data Deleted");
   document.getElementById("Phone").value = "";
