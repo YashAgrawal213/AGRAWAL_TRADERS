@@ -1,37 +1,40 @@
 
-  @media screen and  (min-width: 400px){
+  @media screen and  (max-width: 1600px){
   body {
     margin: 0;
     position: relative;
   }
 }
 
-@media screen and  (min-width: 400px){
+@media screen and  (max-width: 1600px){
   section {
     padding: 90px 15px;
   }
 }
  
-@media screen and  (min-width: 400px){
+@media screen and  (max-width: 1600px){
   .content {
     max-width: 1200px;
     display: block;
     margin: 0 auto;
   }
 }
-@media screen and   (min-width: 400px){
+@media screen and   (max-width: 1600px){
   img {
     max-width: 100%;
     height: auto;
   }
 }
-@media screen and   (min-width: 400px){
+@media screen and   (max-width: 1600px){
   .center {
     text-align: center;
   }
 }
 
-@media screen and  (min-width: 400px){
+
+
+
+@media screen and  (max-width: 1600px){
   .header {
     display: flex;
     padding-left: 2%;
@@ -43,25 +46,25 @@
   }
 }
 
-@media screen and  (min-width: 400px){
+@media screen and  (max-width: 1600px){
   .header .links {
       width: 100%;
   }
   }
 
-  @media screen and  (min-width: 400px){
+  @media screen and  (max-width: 1600px){
   .header .links ul {
     display: flex;
     justify-content: flex-end;
   }
 }
 
-@media screen and   (min-width: 400px){
+@media screen and   (max-width: 1600px){
   .header .links ul li {
     list-style: none;
   }
 }
-@media screen and  (min-width: 400px){
+@media screen and  (max-width: 1600px){
   .header .links ul li a {
     font-size: 22px;
     text-transform: uppercase;
@@ -73,7 +76,7 @@
   }
 }
 
-@media screen and  (min-width: 400px){
+@media screen and  (max-width: 1600px){
   .header .links ul li:hover {
     background-color: #2aedd9;
     transition: 0.5s;
@@ -81,7 +84,12 @@
 }
 
 
-@media screen and  (min-width: 400px){
+
+
+
+
+
+@media screen and  (max-width: 1600px){
   .banner {
     padding: 90px 15px;
     background-image: linear-gradient(165deg, #923cb5 0%, #000000 74%);
@@ -90,7 +98,7 @@
   }
 }
   
-@media screen and  (min-width: 400px){
+@media screen and  (max-width: 1600px){
   .banner .banner--content .designation {
     color: rgba(225, 209, 209, 0.829);
     text-transform: uppercase;
@@ -99,17 +107,17 @@
   }
 }
 
-@media screen and  (min-width: 400px){
+@media screen and  (max-width: 1600px){
   .banner .banner--content .name {
       font-size: 30px;    
   }
 }
-@media screen and   (min-width: 400px){
+@media screen and   (max-width: 1600px){
   .promo {
     background-color: #DEF0FF;
   }
 }
-@media screen and  (min-width: 400px){
+@media screen and  (max-width: 1600px){
   .promo .content h2 {
     font-weight: 300;
     text-shadow: 1px 1px 2px #222;
@@ -118,25 +126,31 @@
 }
 
 
-@media screen and  (min-width: 400px){
+@media screen and  (max-width: 1600px){
   .promo .content p {
       font-size: 35px; 
   }
 }
-@media screen and  (min-width: 400px){
+
+
+
+
+
+
+@media screen and  (max-width: 1600px){
   #about .content h2 {
     text-align: center;
     font-size:50px;
   }
 }
   
-@media screen and  (min-width: 400px){
+@media screen and  (max-width: 1600px){
   #about .about-container {
       display: flex;
       justify-content: space-between;
   }
 }
-@media screen and  (min-width: 400px){
+@media screen and  (max-width: 1600px){
   #about .about-container-left {
     flex-basis: 40%;
     background: #DEF0FF;
@@ -144,14 +158,14 @@
   }
 }
 
-@media screen and  (min-width: 400px){
+@media screen and  (max-width: 1600px){
   #about .about-container-left li {
     font-style: italic;
     line-height: 1.9;
   }
 }
 
-@media screen and  (min-width: 400px){
+@media screen and  (max-width: 1600px){
   #about .about-container-right {
     flex-basis: 60%;
     background: #F2F3F8;
@@ -159,7 +173,7 @@
   }
 }
 
-@media screen and  (min-width: 400px){
+@media screen and  (max-width: 1600px){
 #cate {
   background-color: #7f53ac;
   font-size: 25px;
@@ -167,13 +181,13 @@
 }
 }
 
-@media screen and  (min-width: 400px){
+@media screen and  (max-width: 1600px){
 #cate .cate--content {
   display: block;
 }
 }
 
-@media screen and  (min-width: 400px){
+@media screen and  (max-width: 1600px){
 #cate .cate--content {
     display: flex;
     justify-content: space-between;
@@ -182,13 +196,13 @@
 }
 
 
-@media screen and  (min-width: 400px){
+@media screen and  (max-width: 1600px){
 #cate .cate--content .left h2 {
   font-size: 56px;  
 }
 }
 
-@media screen and  (min-width: 400px){
+@media screen and  (max-width: 1600px){
 #cate .cate--content .right {
       flex-basis: 65%;
       display: flex;
@@ -196,7 +210,7 @@
 }
 }
 
-@media screen and  (min-width: 400px){
+@media screen and (max-width: 1600px){
 #cate .cate--content .right .item {
   text-align: center;
   padding: 15px 15px;
@@ -208,7 +222,7 @@
 }
 }
 
-@media screen and  (min-width: 400px){
+@media screen and (max-width: 1600px) and  (min-width: 800px){
 #cate .cate--content .right .item img {
   max-width: 200px;
 }
@@ -216,7 +230,7 @@
 
 
 
-@media screen and  (min-width: 400px){
+@media screen and (max-width: 1600px){
   #contact .contact-detail, #contact address {
     max-width: 600px;
     display: block;
@@ -225,25 +239,25 @@
 }
 
 
-@media screen and  (min-width: 400px){
+@media screen and  (max-width: 1600px){
   #contact address {
     margin-top: 60px;
   }
 }
 
-@media screen and  (min-width: 400px){
+@media screen and (max-width: 1600px){
   #contact address a {
     text-decoration: none;
   }
 }
 
-@media screen and  (min-width: 400px){
+@media screen and (max-width: 1600px){
   #contact h2 {
     font-size:50px;
   }
 }
 
-  @media screen and  (min-width: 400px){
+  @media screen and  (max-width: 1600px){
   #contact .cont--contact{
     display: flex;
     justify-content: space-between;
@@ -251,14 +265,14 @@
   }
 }
  
-@media screen and  (min-width: 400px){
+@media screen and (max-width: 1600px){
   #contact .cont--contact .left{
     justify-content: space-between;
     padding-left: 10%;
   }
 }
 
-  @media screen and  (min-width: 400px){
+  @media screen and  (max-width: 1600px){
   #contact .cont--contact .right{
   display: flex;
   justify-content: space-between;
@@ -267,7 +281,7 @@
 }
 
 
-@media screen and  (min-width: 400px){
+@media screen and  (max-width: 1600px){
 div .enq a {
   font-family:'Courier New', Courier, monospace;
   color:#000000;
@@ -281,14 +295,14 @@ div .enq a {
 }
 
 
-@media screen and  (min-width: 400px){
+@media screen and (max-width: 1600px){
 .enq-button {
   display: flex;
   justify-content: center;
 }
 }
 
-@media screen and  (min-width: 400px){
+@media screen and (max-width: 1600px){
 .site-footer {
     background-color: rgb(71, 56, 56);
     padding: 90px 15px 30px;
@@ -296,7 +310,7 @@ div .enq a {
 }
 
 
-@media screen and  (min-width: 400px){
+@media screen and (max-width: 1600px){
     .site-footer .site-footer--content {
       max-width: 900px;
       font-size:20px;
@@ -306,7 +320,7 @@ div .enq a {
     }
   }
  
-  @media screen and  (min-width: 400px){
+  @media screen and (max-width: 1600px){
   .site-footer .site-footer--content a {
     color: #FFF;
     text-decoration: none;
@@ -315,7 +329,7 @@ div .enq a {
 
 
   
-@media screen and  (min-width: 400px){
+@media screen and (max-width: 1600px){
  .card{
       width: 20%;
       display: inline-block;
@@ -324,20 +338,20 @@ div .enq a {
      }
     }
 
-    @media screen and  (min-width: 400px){
+    @media screen and (max-width: 1600px){
      .card:hover{
       background-color:rgb(248, 174, 36);
      }
     }
 
-@media screen and  (min-width: 400px){
+@media screen and (max-width: 1600px){
  .title{
    text-align: center;
    padding: 10px;
   }
 }
 
-  @media screen and  (min-width: 400px){
+  @media screen and (max-width: 1600px){
  .des{
    padding: 3px;
    text-align: center; 
@@ -346,7 +360,7 @@ div .enq a {
    border-bottom-left-radius: 5px;
  }
 }
-@media screen and  (min-width: 400px){
+@media screen and (max-width: 1600px){
  button{
    margin-top: 40px;
    margin-bottom: 10px;
@@ -356,7 +370,7 @@ div .enq a {
    padding:10px;
  }
 }
-@media screen and  (min-width: 400px){
+@media screen and  (max-width: 1600px){
  button:hover{
    background-color: black;
    color: white;
@@ -365,7 +379,7 @@ div .enq a {
  }
 }
 
-@media screen and  (min-width: 400px){
+@media screen and (max-width: 1600px){
 .top h1 {
   background-image: linear-gradient(180deg, rgb(98, 17, 131) 0%, rgb(137, 95, 155) 74%);
   font-size:50px;
@@ -374,7 +388,7 @@ div .enq a {
 }
 }
 
-@media screen and  (min-width: 400px){
+@media screen and  (max-width: 1600px){
 .mid h1 {
   background-image: linear-gradient(180deg, rgb(17, 106, 131) 0%, rgb(95, 154, 155) 74%);
   font-size:30px;
