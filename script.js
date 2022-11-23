@@ -1,16 +1,24 @@
-var PhoneV, NameV, AddressV, EmailV;
+var PhoneV, NameV, AddressV, EmailV, MessageV;
 
-function readFom() {
+function readFom(e) {
+  e.preventDefault();
   PhoneV = document.getElementById("Phone").value;
   NameV = document.getElementById("Name").value;
   AddressV = document.getElementById("Address").value;
   EmailV = document.getElementById("Email").value;
-  console.log(PhoneV, NameV, AddressV, EmailV);
+  MessageV = document.getElementById("Message").value;
+  console.log(PhoneV, NameV, AddressV, EmailV, MessageV);
+  console.log(e.submitter.id);
+  if(e.submitter.id=="insert")insert();
+  if(e.submitter.id=="update")update();
+  if(e.submitter.id=="delete")del();
+
 }
-
-document.getElementById("insert").onclick = function () {
-  readFom();
-
+document.getElementById("f1").addEventListener("submit",readFom);
+// document.getElementById("insert").onclick = 
+function insert() {
+  // readFom();
+  
   firebase
     .database()
     .ref("AT/" + PhoneV)
@@ -19,49 +27,42 @@ document.getElementById("insert").onclick = function () {
       Name: NameV,
       Address: AddressV,
       Email: EmailV,
+      Message: MessageV,
     });
   alert("Data Inserted");
+
   document.getElementById("Phone").value = "";
   document.getElementById("Name").value = "";
   document.getElementById("Address").value = "";
   document.getElementById("Email").value = "";
+  document.getElementById("Message").value ="";
 };
 
-document.getElementById("read").onclick = function () {
-  readFom();
 
-  firebase
-    .database()
-    .ref("AT/" + PhoneV)
-    .on("value", function (snap) {
-      document.getElementById("Phone").value = snap.val().Phone;
-      document.getElementById("Name").value = snap.val().Name;
-      document.getElementById("Address").value = snap.val().Address;
-      document.getElementById("Email").value = snap.val().Email;
-    });
-};
-
-document.getElementById("update").onclick = function () {
-  readFom();
-
+// document.getElementById("update").onclick = 
+function update() {
+  // readFom();
+  
   firebase
     .database()
     .ref("AT/" + PhoneV)
     .update({
-      //   Phone: PhoneV,
       Name: NameV,
       Address: AddressV,
       Email: EmailV,
+      Message: MessageV,
     });
   alert("Data Update");
   document.getElementById("Phone").value = "";
   document.getElementById("Name").value = "";
   document.getElementById("Address").value = "";
   document.getElementById("Email").value = "";
+  document.getElementById("Message").value ="";
 };
-document.getElementById("delete").onclick = function () {
-  readFom();
-
+// document.getElementById("delete").onclick = 
+function del() {
+  // readFom();
+  
   firebase
     .database()
     .ref("AT/" + PhoneV)
@@ -71,4 +72,5 @@ document.getElementById("delete").onclick = function () {
   document.getElementById("Name").value = "";
   document.getElementById("Address").value = "";
   document.getElementById("Email").value = "";
+  document.getElementById("Message").value ="";
 };
