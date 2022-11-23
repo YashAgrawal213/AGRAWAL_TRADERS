@@ -24,21 +24,23 @@
         <h2>Send Enquiry Request</h2>
         <hr />
         <br />
+        <form id="f1">
         <div class="form">
-          Phone: <input type="tel" name="phone number" id="Phone" /> <br /><br />
-          Name:&nbsp; <input type="text" name="name" id="Name" /> <br /><br />
-          Address: <input type="text" name="address" id="Address" /> <br /><br />
-          Email: <input type="mail" name="mail" id="Email" /> <br /><br />
+          Phone: <input type="tel" placeholder="Phone" name="phone number" id="Phone" required> <br/><br/>
+          Name: <input type="text" placeholder="Name" name="name" id="Name" required> <br /><br />
+          Address: <input type="text" placeholder="Address" name="address" id="Address" required> <br /><br />
+          Email: <input type="email" placeholder="Email" name="mail" id="Email" required> <br /><br />
+          Message: <input type="text" name="Message" id="Message" cols="30" rows="10" placeholder="Message" required><br /><br />
         </div>
   
         <div class="buton">
-          <button id="insert">Insert</button>
-          <button id="read">Read</button>
-          <button id="update">Update</button>
-          <button id="delete">Delete</button>
+          <button type="submit" id="insert">Insert</button>
+          <button type="submit" id="update">Update</button>
+          <button type="submit" id="delete">Delete</button>
         </div>
+    </form>
       </div>
-  
+    
       <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
   
       <script src="./firebaseConfig.js"></script>
